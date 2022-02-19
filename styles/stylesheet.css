@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
     font-family: 'Roboto';
     line-height: 24px;
-    color: white;
+    color: #efefef;
     background: linear-gradient(292.96deg, rgba(74, 78, 80, 0.93) 13.19%, #7084CB 36.98%, #A3E08D 109.51%);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -20,7 +21,11 @@ body {
     background-color: rgba(241 , 241, 241, 0.3);
     border-radius: 5px;
     font-size: 1.5em;
+    font-family: 'Nunito';
+    color: #efefef;
+    font-weight: 500;
 }
+
 @media (max-width: 992px) {
 .button-text {
     font-size: 1em;
@@ -37,12 +42,14 @@ body {
 }
 
 .selection-button > .button-text:hover {
-    color: black;
+    color: #454545;
     transition: all 0.25s;
 }
 
 .title > h1 {
-    color: white;
+    color: #efefef;
+    font-family: 'Space Mono';
+    font-weight: 700;
     font-size: 80px;
     margin-top: 20px;
     margin-bottom: 50px;
@@ -50,26 +57,32 @@ body {
 
 h2 {
     font-size: 40px;
+    color: #efefef;
+    font-family: 'Nunito';
+    font-weight: 300;
+    padding-bottom: 20px;
 }
 
 h3 {
     font-size: 30px;
+    color: #efefef;
+    font-family: 'Nunito';
+    font-weight: 300;
+    padding-bottom: 20px;
+
 }
 .container > h1 {
     margin-top: 60px;
     margin-bottom: 30px;
 }
 
-nav {
-    background: rgba(241 , 241, 241, 0);
-    color: white;
-}
-nav > .btn {
+#continue {
     margin-right: 30px;
-    background-color: rgba(241 , 241, 241, 0.5) !important;
-    width: 200px;
+    background-color: rgba(4, 0, 45, 0.32); 
     color:white;
     padding: 20px;
-    font-weight: bolder;
-    font-size: larger;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* font-weight: bolder;
+    font-size: larger; */
 }
