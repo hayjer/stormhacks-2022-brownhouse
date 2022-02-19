@@ -19,3 +19,9 @@ function setSelectedDate(element) {
         element.classList.add("selected-time");
     }
 }
+
+function sendRequest() {
+    document.getElementsByClassName
+    let genres = [];
+    for(let i = 0; i < )
+}
