@@ -2,8 +2,39 @@
 
 body {
     font-family: 'Roboto';
-    background-image: './images/pickflick.png';
+    line-height: 24px;
+    color: #efefef;
+    background: linear-gradient(292.96deg, rgba(74, 78, 80, 0.93) 13.19%, #7084CB 36.98%, #A3E08D 109.51%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.button-text {
+    padding-top: 30%;
+    padding-bottom: 30%;
+    background-color: rgba(241 , 241, 241, 0.5);
+    border-radius: 5px;
+    color: white;
 }
 .row {
-    margin: 22px;
+    margin: 22px;}
+.card-title{
+    font-size: 2em;
+    font-weight: bolder;
+    color:coral;
+}
+
+.title > h1 {
+font-size: 80px;
+margin-top: 20px;
+margin-left: 30px;
+margin-bottom: 80px;
+}
+
+h2 {
+font-size: 40px;
+}
+
+h3 {
+font-size: 30px;
 }
