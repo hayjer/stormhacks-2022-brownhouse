@@ -3,38 +3,73 @@
 body {
     font-family: 'Roboto';
     line-height: 24px;
-    color: #efefef;
+    color: white;
     background: linear-gradient(292.96deg, rgba(74, 78, 80, 0.93) 13.19%, #7084CB 36.98%, #A3E08D 109.51%);
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
+::selection {
+    background-color:darkseagreen;
+    color: white;
+}
+
 .button-text {
     padding-top: 30%;
     padding-bottom: 30%;
-    background-color: rgba(241 , 241, 241, 0.5);
+    background-color: rgba(241 , 241, 241, 0.3);
     border-radius: 5px;
-    color: white;
+    font-size: 1.5em;
+}
+@media (max-width: 992px) {
+.button-text {
+    font-size: 1em;
+}
 }
 .row {
-    margin: 22px;}
-.card-title{
-    font-size: 2em;
-    font-weight: bolder;
-    color:coral;
+    margin: 22px;
+}
+.selected-genre {
+    background-color: rgba(241 , 241, 241, 0.6);
+}
+.selected-time {
+    background-color: rgba(241 , 241, 241, 0.6);
+}
+
+.selection-button > .button-text:hover {
+    color: black;
+    transition: all 0.25s;
 }
 
 .title > h1 {
-font-size: 80px;
-margin-top: 20px;
-margin-left: 30px;
-margin-bottom: 80px;
+    color: white;
+    font-size: 80px;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 h2 {
-font-size: 40px;
+    font-size: 40px;
 }
 
 h3 {
-font-size: 30px;
+    font-size: 30px;
+}
+.container > h1 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+nav {
+    background: rgba(241 , 241, 241, 0);
+    color: white;
+}
+nav > .btn {
+    margin-right: 30px;
+    background-color: rgba(241 , 241, 241, 0.5) !important;
+    width: 200px;
+    color:white;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: larger;
 }
