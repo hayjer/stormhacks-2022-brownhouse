@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>My test page</title>
+  <title>pickflick</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 </head>
 
 <body>
@@ -14,7 +15,7 @@
     </div>
 
     <h2>what genre(s) are you looking for?</h2>
-    <h3>pick up to three</h3>
+    <h3 class="before-squares">pick up to three</h3>
     <div class="row">
       <div class="selection-button col-3" onclick="setSelectedGenre(this)">
         <div class="button-text text-center">comedy</div>
@@ -51,7 +52,7 @@
 
 
   <div class="container">
-    <h2>filter release date range</h2>
+    <h2 class="before-squares">filter release date range</h2>
     <div class="row">
       <div class="selection-button col-3"  onclick="setSelectedDate(this)">
         <div class="button-text text-center">this year</div>
@@ -66,9 +67,9 @@
   </div>
 
   <nav class="navbar navbar-bottom navbar-dark">
-    <a class="navbar-brand" href=""></a>
+    <a class="navbar-brand" href="#"></a>
     <a id="continue" class="btn" onclick="sendRequest()">
-      <div class="my-auto">Continue</div>
+      <div class="my-auto">continue</div>
     </a>
   </nav>
 
