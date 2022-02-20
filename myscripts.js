@@ -1,22 +1,44 @@
 function setSelectedGenre(element) {
     element = element.children[0];
-    if (element.classList.contains("selected-genre"))
+    if (element.classList.contains("selected-genre")) {
         element.classList.remove("selected-genre");
+        if(!checkSelected()) {
+            document.getElementById("continue").classList.add("disabled");
+        }
+    }
     else {
         if (document.getElementsByClassName("selected-genre").length >= 3)
             return;
         element.classList.add("selected-genre");
+        if (checkSelected()) {
+            document.getElementById("continue").classList.remove("disabled");
+        }
     }
+}
+
+function checkSelected() {
+    if (document.getElementsByClassName("selected-genre").length >= 1 &&
+        document.getElementsByClassName("selected-time").length == 1) {
+        return true;
+    }
+    return false;
 }
 
 function setSelectedDate(element) {
     element = element.children[0];
-    if (element.classList.contains("selected-time"))
+    if (element.classList.contains("selected-time")) {
         element.classList.remove("selected-time");
+        if(!checkSelected()) {
+            document.getElementById("continue").classList.add("disabled");
+        }
+    }
     else {
         if (document.getElementsByClassName("selected-time").length >= 1)
             return;
         element.classList.add("selected-time");
+        if (checkSelected()) {
+            document.getElementById("continue").classList.remove("disabled");
+        }
     }
 }
 
@@ -51,7 +73,13 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function () {
-    modal.style.display = "block";
+    let genreElements = document.getElementsByClassName("selected-genre");
+    let releaseDateRange = document.getElementsByClassName("selected-time");
+    if (genreElements.length == 0 || releaseDateRange.length == 0) {
+        return;
+    } else {
+        modal.style.display = "block";
+    }
 }
 
 // When the user clicks on <span> (x), close the modal
