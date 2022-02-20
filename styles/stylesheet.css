@@ -75,7 +75,7 @@ h3 {
 
 #continue {
     margin-right: 30px;
-    background-color: rgba(4, 0, 45, 0.32); 
+    background-color: rgba(4, 0, 45, 0.5); 
     color:white;
     padding: 20px;
     padding-left: 50px;
@@ -93,9 +93,6 @@ h3 {
 .before-squares {
     padding-bottom: 20px;
 }
-
-
-
 
 /* The Modal (background) */
 .modal {
@@ -133,4 +130,13 @@ h3 {
     text-decoration: none;
     cursor: pointer;
     transition: all 1s;
+  }
+
+  #copy-btn {
+    background-color: #747474;
+    color: white;
+  }
+
+  #copy-btn:hover {
+      background-color: #454545;
   }
