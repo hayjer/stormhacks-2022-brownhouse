@@ -8,6 +8,7 @@ body {
     background: linear-gradient(292.96deg, rgba(74, 78, 80, 0.93) 13.19%, #7084CB 36.98%, #A3E08D 109.51%);
     background-attachment: fixed;
     background-repeat: no-repeat;
+    overflow: hidden; /* Hide scrollbars */
 }
 
 ::selection {
