@@ -86,7 +86,6 @@ h3 {
     font-size: larger; */
 }
 
-<<<<<<< HEAD
 #continue:hover {
     background: rgba(4, 0, 45, 0.78);
 }
@@ -94,7 +93,6 @@ h3 {
 .before-squares {
     padding-bottom: 20px;
 }
-=======
 
 
 
@@ -136,4 +134,3 @@ h3 {
     cursor: pointer;
     transition: all 1s;
   }
->>>>>>> 88dc2749624e1b7279f3ade9eacf13b553f58129
