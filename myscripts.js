@@ -42,6 +42,14 @@ function setSelectedDate(element) {
     }
 }
 
+function nextMovie() {
+
+}
+
+function addToLiked() {
+    
+}
+
 function copyToClipboard() {
     /* Get the text field */
     var copyText = document.getElementById("link");
@@ -71,6 +79,8 @@ var btn = document.getElementById("continue");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+var link = document.getElementById("link");
+
 // When the user clicks on the button, open the modal
 btn.onclick = function () {
     let genreElements = document.getElementsByClassName("selected-genre");
@@ -79,6 +89,7 @@ btn.onclick = function () {
         return;
     } else {
         modal.style.display = "block";
+        link.value = "hi";
     }
 }
 
