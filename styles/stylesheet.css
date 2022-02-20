@@ -140,3 +140,15 @@ h3 {
   #copy-btn:hover {
       background-color: #454545;
   }
+
+  #rate-btn {
+      background-color: rgba(54, 95, 95, 0.75);
+      border-radius: 4px;
+      margin-right: 100px;
+      width: 5%;
+      color: white;
+  }
+
+  #rate-btn:hover {
+    background-color: rgba(54, 95, 95);
+}
